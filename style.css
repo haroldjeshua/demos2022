@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  justify-content: center;
+  padding: clamp(4vw, 2rem, 6vw);
 }
 
 .header {
@@ -25,6 +25,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-wrapper {
+  display: flex;
 }
 
 h1 {
@@ -37,9 +49,9 @@ p {
 
 .demo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-  gap: 1rem;
-  padding: clamp(4vw, 2rem, 6vw);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 2rem;
+  padding: clamp(4vw, 2rem, 6vw) 0;
 }
 
 video {
